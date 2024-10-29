@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali Card</title>
+    <style>
+        /* CSS for styling the greeting card */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0f0c29;
+            background-image: linear-gradient(315deg, #0f0c29 0%, #302b63 74%);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        .card h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #ff4500;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            display: none; /* Hidden by default */
+        }
+
+        .btn {
+            background-color: #ff4500;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML structure for the card -->
+    <div class="card">
+        <h1>Happy Diwali! 🎉🪔</h1>
+        <p id="greeting-message">
+            Wishing you and your family a Diwali filled with love, joy, and light! 🌟<br>
+            May this festival bring endless happiness and prosperity in your life!
+        </p>
+        <button class="btn" onclick="showGreeting()">Click to Reveal the Greeting</button>
+    </div>
+
+    <!-- JavaScript for interactive functionality -->
+    <script>
+        function showGreeting() {
+            var message = document.getElementById('greeting-message');
+            message.style.display = 'block';  // Show the message
+        }
+    </script>
+</body>
+</html>
